@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset='utf-8'>
+    <meta http-equiv='X-UA-Compatible' content='IE=edge'>
+    <title>Page Title</title>
+    <meta name='viewport' content='width=device-width, initial-scale=1'>
+    <link rel="stylesheet" media="all" href="animation.css" />
+    <script src='animacion.js'></script>
+</head>
+<body>
+    <h1>Hola Mundo Asíncrono</h1>
+    <table>
+        <tr><th colspan="2">Proceso 1</th></tr>
+        <tr>
+            <td>
+                <button id="btnIniciar" class="redbtn" onclick="return iniciar1();">Iniciar</button>
+                <button id="btnParar" class="redbtn" onclick="return parar1();">Detener</button>
+                <div id="caja1" class="caja">10</div>
+            </td>
+        </tr>
+        <tr><th colspan="2">Proceso 2</th></tr>
+        <tr>
+            <td>
+                <button id="btnIniciar" class="redbtn" onclick="return iniciar2();">Iniciar</button>
+                <button id="btnParar" class="redbtn" onclick="return parar2();">Detener</button>
+                <div id="caja2" class="caja">0</div>
+            </td>
+        </tr>
+</table>
+</body>
+</html>
+
+
