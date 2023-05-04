@@ -1,0 +1,20 @@
+body {
+font-size: 24;
+background-color:aliceblue;
+}
+
+#myForm td, th{
+    border: bisque 2px solid;
+}
+
+select{
+    width: 200pt;
+}
+
+.center{
+    text-align: center;
+}
+
+.left{
+    text-align: left;
+}
