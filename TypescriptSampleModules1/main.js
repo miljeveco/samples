@@ -25,4 +25,6 @@ export function mostrarSeries() {
     if (out != null)
         out.innerHTML = html;
 }
-mostrarSeries();
+let myButton = document.getElementById("myButton");
+if (myButton != null)
+    myButton.onclick = mostrarSeries;
