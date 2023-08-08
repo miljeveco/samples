@@ -1,0 +1,43 @@
+<p>lista works!</p>
+
+<select name="lista">
+    <option *ngFor="let myHeroe of mysHeroes" value="{{myHeroe.id}}">{{myHeroe.name}}</option>
+</select>
+
+<ul>
+    <li *ngFor="let myHeroe of mysHeroes">
+        <div><span>Id: </span><span class="data">{{myHeroe.id}}</span></div>
+        <div>
+            <span>Name: </span>
+            <span class="data">{{myHeroe.name | uppercase}}</span>
+            <input name="name1" [(ngModel)]="myHeroe.name" placeholder="name of heroe" />
+        </div>
+    </li>
+</ul>
+<br />
+
+<table class="table table-striped">
+    <thead>
+        <tr>
+            <th>Id</th>
+            <th>Name</th>
+        </tr>
+    </thead>
+    <tbody>
+        <tr *ngFor="let myHeroe of mysHeroes">
+            <td>{{myHeroe.id}}</td>
+            <td>{{myHeroe.name}}</td>
+        </tr>
+    </tbody>
+</table>
+
+<div id="myCards">
+    <div *ngFor="let h of mysHeroes" class="card" style="width: 18rem;">
+        <img class="card-img-top" src="../assets/img-heroes/{{h.id}}.png" alt="Image for {{h.name}}">
+        <div class="card-body">
+            <h5 class="card-title">{{h.name}}</h5>
+            <p class="card-text">{{h.description}}.</p>
+            <a href="#" class="btn btn-primary">View Details...</a>
+        </div>
+    </div>
+</div>

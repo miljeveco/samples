@@ -1,0 +1,21 @@
+<p>newheroe works!</p>
+
+<ul>
+    <li *ngFor="let myHeroe of mysHeroes">
+        <div><span>Id: </span><span class="data">{{myHeroe.id}}</span></div>
+        <div>
+            <span>Name: </span>
+            <span class="data">{{myHeroe.name | uppercase}}</span>
+            <input name="name1" [(ngModel)]="myHeroe.name" placeholder="name of heroe" />
+        </div>
+    </li>
+</ul>
+
+<br/>
+
+<div>
+    <form action="#" method="POST">
+      <input name="namenewheroe" id="namenewheroe" type="text" placeholder="New heroe name" />
+      <button type="button" (click)="newHeroe()">Click nuevo heroe</button>
+    </form>
+</div>

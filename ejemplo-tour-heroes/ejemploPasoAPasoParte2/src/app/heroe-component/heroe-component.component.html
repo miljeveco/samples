@@ -1,0 +1,19 @@
+<p>heroe-component works!</p>
+<ul>
+    <li>
+        <div><span>Id: </span><span class="data">{{myHeroe1.id}}</span></div>
+        <div>
+            <span>Name: </span>
+            <span class="data">{{myHeroe1.name | uppercase}}</span>
+            <input name="name1" [(ngModel)]="myHeroe1.name" placeholder="name of heroe"/>
+        </div>
+    </li>
+    <li>
+        <div><span>Id: </span><span class="data">{{myHeroe2.id}}</span></div>
+        <div><span>Name: </span><span class="data">{{myHeroe2.name}}</span></div>
+    </li>
+    <li>
+        <div><span>Id: </span><span class="data">{{myHeroe3.id}}</span></div>
+        <div><span>Name: </span><span class="data">{{myHeroe3.name}}</span></div>
+    </li>
+</ul>
