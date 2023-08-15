@@ -1,0 +1,13 @@
+<form>
+    <input type="file" (change)="toBase64($event)">
+    <ng-container *ngIf="imgOk; else elseTemplate">
+        <img [src]="base64" />
+        <textarea rows="10" cols="100">{{base64}}</textarea>
+        <br/>
+    </ng-container>
+    <ng-template #elseTemplate>
+        <b>Sin imagen o error...</b>
+    </ng-template>
+    <br/>
+    <button (click)="clearImage()" *ngIf="imgOk">Remove</button>
+</form>
