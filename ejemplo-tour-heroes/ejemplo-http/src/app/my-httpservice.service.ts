@@ -2,6 +2,7 @@ import { Injectable } from '@angular/core';
 
 import { HttpClient } from '@angular/common/http';
 import { Observable } from 'rxjs';
+//Leer https://rxjs.dev/guide/operators#creation-operators-list
 
 
 import { Hero } from './hero';
